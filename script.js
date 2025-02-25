@@ -65,12 +65,13 @@ const calculatorTwo = (num1, num2, operator) => {
 }
 console.log(calculatorTwo(8, 25, "/"))
 
+const userInput = document.getElementById("user-input")
 const displayBtn = document.getElementById("display-button")
 const output = document.getElementById("output")
 
 displayBtn.addEventListener("click", () => {
-   const userInput = document.getElementById("user-input").value
-   output.textContent = userInput
+   
+   output.textContent = userInput.value
    console.log("button clicked")
 })
 
